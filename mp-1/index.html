@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menghitung luas keliling</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Menghitung luas dan keliling<br />segitiga | lingkaran | jajargenjang
+      </h1>
+      <div class="main">
+        <p>Pilih Bangun Datar :</p>
+        <p>
+          <span class="triangle">Segitiga</span> |
+          <span class="circle">Lingkaran</span> |
+          <span class="parallelogram">Jajargenjang</span>
+        </p>
+        <div class="box">
+          <!-- Area -->
+          <div class="area">
+            <!-- Triangle -->
+            <div class="triangle-area">
+              <p>Menghitung Luas Segitiga</p>
+              <table>
+                <tr>
+                  <td>Alas</td>
+                  <td>:</td>
+                  <td>
+                    <input type="text" name="alas" class="a-ta" id="alas" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tinggi</td>
+                  <td>:</td>
+                  <td>
+                    <input type="text" name="tinggi" class="t-ta" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Hitung"
+                      class="btn-count-ta"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Reset"
+                      class="btn-reset-ta"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Hasil</td>
+                  <td>:</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="hasil"
+                      readonly
+                      class="result-ta"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Circle -->
+            <div class="circle-area">
+              <p>Menghitung Luas Lingkaran</p>
+              <table>
+                <tr>
+                  <td>Jari-jari</td>
+                  <td>:</td>
+                  <td><input type="text" name="jari-jari" class="r-ca" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Hitung"
+                      class="btn-count-ca"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Reset"
+                      class="btn-reset-ca"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Hasil</td>
+                  <td>:</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="hasil"
+                      readonly
+                      class="result-ca"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Parallelogram -->
+            <div class="parallelogram-area">
+              <p>Menghitung Luas Jajargenjang</p>
+              <table>
+                <tr>
+                  <td>Alas</td>
+                  <td>:</td>
+                  <td><input type="text" name="alas" class="a-pa" /></td>
+                </tr>
+                <tr>
+                  <td>Tinggi</td>
+                  <td>:</td>
+                  <td><input type="text" name="tinggi" class="t-pa" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Hitung"
+                      class="btn-count-pa"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Reset"
+                      class="btn-reset-pa"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Hasil</td>
+                  <td>:</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="hasil"
+                      readonly
+                      class="result-pa"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Perimeter -->
+          <div class="perimeter">
+            <!-- Triangle -->
+            <div class="triangle-perimeter">
+              <p>Menghitung Keliling Segitiga</p>
+              <table>
+                <tr>
+                  <td>a</td>
+                  <td>:</td>
+                  <td><input type="text" name="a" class="a-tp" /></td>
+                </tr>
+                <tr>
+                  <td>b</td>
+                  <td>:</td>
+                  <td><input type="text" name="b" class="b-tp" /></td>
+                </tr>
+                <tr>
+                  <td>c</td>
+                  <td>:</td>
+                  <td><input type="text" name="c" class="c-tp" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Hitung"
+                      class="btn-count-tp"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Reset"
+                      class="btn-reset-tp"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Hasil</td>
+                  <td>:</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="hasil"
+                      readonly
+                      class="result-tp"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Circle -->
+            <div class="circle-perimeter">
+              <p>Menghitung Keliling Lingkaran</p>
+              <table>
+                <tr>
+                  <td>Jari-jari</td>
+                  <td>:</td>
+                  <td><input type="text" name="jari-jari" class="r-cp" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Hitung"
+                      class="btn-count-cp"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Reset"
+                      class="btn-reset-cp"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Hasil</td>
+                  <td>:</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="hasil"
+                      readonly
+                      class="result-cp"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- Parallelogram -->
+            <div class="parallelogram-perimeter">
+              <p>Menghitung Keliling Jajargenjang</p>
+              <table>
+                <tr>
+                  <td>a</td>
+                  <td>:</td>
+                  <td><input type="text" name="a" class="a-pp" /></td>
+                </tr>
+                <tr>
+                  <td>b</td>
+                  <td>:</td>
+                  <td><input type="text" name="b" class="b-pp" /></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Hitung"
+                      class="btn-count-pp"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="submit"
+                      name="submit"
+                      value="Reset"
+                      class="btn-reset-pp"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Hasil</td>
+                  <td>:</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="hasil"
+                      readonly
+                      class="result-pp"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
